@@ -9,7 +9,7 @@ When using AI to flag important variants in a patient's genome, variability and 
 * **Quarantine Control:** A subsequent `JSON_VALIDATION` step actively quarantines any malformed outputs instead of silently accepting them.
 * **Full Auditability:** The `AUDIT_BUNDLE` process creates a "receipt" for every single run. 
 * **Metadata Logging:** It securely logs the exact model version, prompt version, container digest, `sarek` commit, input hash, timestamp, and pass/fail status.
-* **Low-Cost Accessibility:** The default deployment runs entirely on GitHub Codespaces with Docker (CPU-only) requiring zero cloud budget ($0).
+* **Low-Cost Accessibility:** The default deployment runs entirely on GitHub Codespaces with Docker (CPU-only) requiring zero cloud budget ($0). 
 * **Cloud Scale-Up:** AWS deployment remains available as an optional scale-up path.
 
 ## Project Structure
@@ -27,19 +27,7 @@ When using AI to flag important variants in a patient's genome, variability and 
 
 ### Installation
 1. Clone the repository:
-   ```bash
-   git clone https://github.com/STaiMIC/glassbox-ai-triage.git
-```
-2. Navigate into the directory:
-   ```bash
-   cd glassbox-ai-triage
-```
-3. Usage
-   ```bash
-   nextflow run main.nf -profile standard
-```
-4. Testing
-```
-5. Contributing
-```
-6. License
+```bash
+git clone [https://github.com/STaiMIC/glassbox-ai-triage.git](https://github.com/STaiMIC/glassbox-ai-triage.git)
+cd glassbox-ai-triage
+nextflow run main.nf -profile standard
