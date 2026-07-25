@@ -1,0 +1,10 @@
+{
+  "run_timestamp": "2026-07-25T21:25:28.867028+00:00",
+  "input_vcf": "tests/sample.vcf",
+  "input_vcf_sha256": "0690c3d815f0fad80779f4f5d02420483e6274432121fbe653f4c02d23e58f99",
+  "rule_version": "v1.0.0",
+  "sarek_version": "sarek-3.9.0",
+  "n_valid": 3,
+  "n_quarantined": 0,
+  "validation_status": "PASS"
+}
