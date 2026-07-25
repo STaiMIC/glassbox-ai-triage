@@ -4,7 +4,7 @@ This project provides a small, reusable Nextflow subworkflow that sits immediate
 
 When using AI to flag important variants in a patient's genome, variability and lack of traceability create a major "trust problem." This pattern solves that by ensuring every triage decision is highly reproducible, completely traceable, and strictly formatted, which is especially critical for small research groups in low- and middle-income countries requiring affordable infrastructure.
 
-### Main Objectives
+## Main Objectives
 * **Strict Validation:** The `AI_TRIAGE` process forces the output into a schema-constrained JSON format rather than free text. 
 * **Quarantine Control:** A subsequent `JSON_VALIDATION` step actively quarantines any malformed outputs instead of silently accepting them.
 * **Full Auditability:** The `AUDIT_BUNDLE` process creates a "receipt" for every single run. 
@@ -26,7 +26,8 @@ When using AI to flag important variants in a patient's genome, variability and 
 * Docker
 
 ### Installation
-1. Clone the repository:
+
+Clone the repository:
 ```bash
 git clone [https://github.com/STaiMIC/glassbox-ai-triage.git](https://github.com/STaiMIC/glassbox-ai-triage.git)
 cd glassbox-ai-triage
