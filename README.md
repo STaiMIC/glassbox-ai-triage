@@ -29,15 +29,15 @@ When using AI to flag important variants in a patient's genome, variability and 
     cd glassbox-ai-triage
   nextflow run main.nf -profile standard
   ```
-## 💻 Usage
+## Usage
 Provide a basic command for how to run the main Nextflow pipeline.
 ```bash
 nextflow run main.nf -profile standard
-## 🧪 Testing
+## Testing
 Instructions for how to run the files in the `tests/` directory.
 
-## 🤝 Contributing
+## Contributing
 Guidelines for how team members can contribute to this project.
 
-## 📝 License
+##  License
 This project is licensed under the MIT License.
