@@ -1,1 +1,3 @@
-
+Background Literature Review: AI-Assisted Variant Interpretation, Explainable AI, and Workflow Provenance
+GlassBox AI Triage After nf-core/sarek —Systems Medicine
+The following review summarises existing research across three domains central to the GlassBox AI Triage project: AI-assisted interpretation of genomic variants, explainable ("glass-box") AI for clinical genomics, and workflow provenance tracking. Each body of work demonstrates the maturity of its respective field, and together they reveal a gap that the project addresses, an affordable, auditable, reproducible triage layer that unifies all three capabilities inside a single lightweight Nextflow subworkflow.
