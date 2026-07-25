@@ -28,4 +28,18 @@ When using AI to flag important variants in a patient's genome, variability and 
 ### Installation
 1. Clone the repository:
    ```bash
-   git clone [https://github.com/STaiMIC/glassbox-ai-triage.git](https://github.com/STaiMIC/glassbox-ai-triage.git)
+   git clone https://github.com/STaiMIC/glassbox-ai-triage.git
+```
+2. Navigate into the directory:
+   ```bash
+   cd glassbox-ai-triage
+```
+3. Usage
+   ```bash
+   nextflow run main.nf -profile standard
+```
+4. Testing
+```
+5. Contributing
+```
+6. License
