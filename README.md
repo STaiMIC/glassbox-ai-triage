@@ -63,4 +63,4 @@ Seqera Labs, S.L., used here descriptively.
 
 STAiMIC-authored code is licensed under Apache-2.0. Any third-party source
 code included in this repository remains under its original licence, as
-identified by the file headers and THIRD_PARTY_NOTICES.md.
+identified by the file headers and **[THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md)**
