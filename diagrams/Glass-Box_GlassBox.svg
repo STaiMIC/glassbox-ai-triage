@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1800" height="620" viewBox="0 0 1800 620" role="img" aria-labelledby="title desc">
+  <title id="title">Glass-Box AI Triage Pipeline — GlassBox style</title>
+  <desc id="desc">VCF file to AI triage, JSON validation, audit bundle, and reports. JSON validation independently branches to validated JSON and quarantined output.</desc>
+  <defs>
+    <marker id="arrow-main" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#2B5876"/>
+    </marker>
+    <marker id="arrow-pass" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#2E7D5B"/>
+    </marker>
+    <marker id="arrow-invalid" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#B84A4A"/>
+    </marker>
+    <style>
+      .main-label {
+        fill: #102A43;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 24px;
+        font-weight: 700;
+        text-anchor: middle;
+        dominant-baseline: middle;
+      }
+      .description {
+        fill: #334E68;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 19px;
+        font-weight: 400;
+        text-anchor: middle;
+      }
+      .main-arrow {
+        fill: none;
+        stroke: #2B5876;
+        stroke-width: 2.7;
+        marker-end: url(#arrow-main);
+      }
+      .branch-label {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 21px;
+        font-weight: 700;
+        text-anchor: middle;
+        dominant-baseline: middle;
+      }
+    </style>
+  </defs>
+  <rect x="0" y="0" width="1800" height="620" fill="#FFFFFF"/>
+
+  <!-- Main horizontal workflow -->
+  <rect x="45" y="70" width="230" height="78" rx="12" fill="#F7FAFC" stroke="#17324D" stroke-width="2.7" style=""/><rect x="355" y="70" width="275" height="78" rx="12" fill="#EFF8FF" stroke="#156B8A" stroke-width="2.7" style=""/><rect x="720" y="70" width="360" height="78" rx="12" fill="#EAFBFA" stroke="#008C8C" stroke-width="2.7" style=""/><rect x="1170" y="70" width="325" height="78" rx="12" fill="#F1F5F9" stroke="#17324D" stroke-width="2.7" style=""/><rect x="1580" y="70" width="175" height="78" rx="12" fill="#F7FAFC" stroke="#17324D" stroke-width="2.7" style=""/>
+  <path d="M 57 71.5 H 263" stroke="#17324D" stroke-width="5" stroke-linecap="round"/><path d="M 367 71.5 H 618" stroke="#156B8A" stroke-width="5" stroke-linecap="round"/><path d="M 732 71.5 H 1068" stroke="#008C8C" stroke-width="5" stroke-linecap="round"/><path d="M 1182 71.5 H 1483" stroke="#17324D" stroke-width="5" stroke-linecap="round"/><path d="M 1592 71.5 H 1743" stroke="#17324D" stroke-width="5" stroke-linecap="round"/>
+  <text class="main-label" x="160.0" y="110.0">VCF file</text><text class="main-label" x="492.5" y="110.0">AI_TRIAGE</text><text class="main-label" x="900.0" y="110.0">JSON_VALIDATION</text><text class="main-label" x="1332.5" y="110.0">AUDIT_BUNDLE</text><text class="main-label" x="1667.5" y="110.0">REPORTS</text>
+  <path class="main-arrow" d="M 275 109.0 H 352"/><path class="main-arrow" d="M 630 109.0 H 717"/><path class="main-arrow" d="M 1080 109.0 H 1167"/><path class="main-arrow" d="M 1495 109.0 H 1577"/>
+  <text class="description" x="160.0" y="182"><tspan x="160.0" dy="0">Variants called by</tspan><tspan x="160.0" dy="25">nf-core/sarek</tspan><tspan x="160.0" dy="25">(unmodified)</tspan></text><text class="description" x="492.5" y="182"><tspan x="492.5" dy="0">AI reviews variants and</tspan><tspan x="492.5" dy="25">suggests priority</tspan></text><text class="description" x="900.0" y="182"><tspan x="900.0" dy="0">Checks the AI’s answer follows</tspan><tspan x="900.0" dy="25">the correct format</tspan></text><text class="description" x="1332.5" y="182"><tspan x="1332.5" dy="0">Creates a “receipt” recording</tspan><tspan x="1332.5" dy="25">exactly what produced this answer</tspan></text><text class="description" x="1667.5" y="182"><tspan x="1667.5" dy="0">Final output for review</tspan></text>
+
+  <!-- Two independent outputs from JSON_VALIDATION -->
+  <path d="M 775 148 H 675 V 392 H 742 V 455" fill="none"
+        stroke="#2E7D5B" stroke-width="2.7"
+        marker-end="url(#arrow-pass)"/>
+  <path d="M 1025 148 H 1125 V 392 H 1058 V 455" fill="none"
+        stroke="#B84A4A" stroke-width="2.7"
+        marker-end="url(#arrow-invalid)"/>
+
+  <rect x="600" y="455" width="285" height="82" rx="12"
+        fill="#EAF8F1" stroke="#2E7D5B"
+        stroke-width="2.7"/>
+  <text class="branch-label" x="742.5" y="486" fill="#1D6647">
+    <tspan x="742.5" dy="0">Validated JSON</tspan>
+    <tspan x="742.5" dy="27">(pass)</tspan>
+  </text>
+
+  <rect x="915" y="455" width="285" height="82" rx="12"
+        fill="#FFF1F1" stroke="#B84A4A"
+        stroke-width="2.7"/>
+  <text class="branch-label" x="1057.5" y="486" fill="#963636">
+    <tspan x="1057.5" dy="0">Quarantined output</tspan>
+    <tspan x="1057.5" dy="27">(invalid)</tspan>
+  </text>
+</svg>
