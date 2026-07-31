@@ -4,6 +4,12 @@ This project provides a small, reusable Nextflow subworkflow that sits immediate
 
 When using AI to flag important variants in a patient's genome, variability and lack of traceability create a major "trust problem." This pattern solves that by ensuring every triage decision is highly reproducible, completely traceable, and strictly formatted, which is especially critical for small research groups in low- and middle-income countries requiring affordable infrastructure.
 
+## Architecture
+
+![GlassBox AI Triage pipeline: VCF file flows through AI_TRIAGE, JSON_VALIDATION, and AUDIT_BUNDLE to produce Reports, with JSON_VALIDATION branching to either Validated JSON or Quarantined output](diagrams/Glass-Box_GlassBox.svg)
+
+*VCF outputs from an unmodified nf-core/sarek run are triaged, validated against a strict schema, and packaged with a full audit trail before reaching final reports. Malformed outputs are quarantined rather than silently accepted.*
+
 ## Main Objectives
 
 * **Strict Validation:** The AI_TRIAGE process forces the output into a schema-constrained JSON format rather than free text.
