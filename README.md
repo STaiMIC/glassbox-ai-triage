@@ -22,7 +22,9 @@ This repository demonstrates how a deterministic, rule-based triage step can pro
 
 ## Test Data and Fixture Scope
 
-The repository includes a committed test VCF used only for workflow testing and reproducibility checks. No claim is made here about the exact nf-core/sarek version or command used to generate any committed VCF fixture unless that provenance is explicitly documented in the repository.
+## Test Data and Fixture Scope
+
+The repository includes a committed test VCF used only for workflow testing and reproducibility checks.
 
 ## Project Structure
 
