@@ -8,7 +8,7 @@ When testing reproducibility patterns for variant triage workflows, variability 
 
 ## Architecture
 
-![GlassBox Rule Base Triage pipeline: VCF file flows through AI_TRIAGE, JSON_VALIDATION, and AUDIT_BUNDLE to produce Reports, with JSON_VALIDATION branching to either Validated JSON or Quarantined output](diagrams/Glass-Box_GlassBox.svg)
+![GlassBox Rule Base Triage pipeline: VCF file flows through _TRIAGE, JSON_VALIDATION, and AUDIT_BUNDLE to produce Reports, with JSON_VALIDATION branching to either Validated JSON or Quarantined output](diagrams/Glass-Box_GlassBox.svg)
 
 *VCF-like test inputs are processed through a deterministic triage step, validated against a strict schema, and packaged with an audit trail before reaching final reports. Malformed outputs are quarantined rather than silently accepted.*
 
