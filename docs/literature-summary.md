@@ -4,7 +4,7 @@ GlassBox Deterministic Rule-Based Triage for Post-VCF Workflow Testing - Systems
 
 > **Scope note:** This literature review discusses computational variant scoring, explainability, structured outputs, and workflow provenance because these areas motivate the longer-term design space for this repository. The current repository implementation uses placeholder, deterministic, rule-based triage logic for reproducibility testing only. It is not a validated clinical method and must not be used to prioritise real clinical variants.
 
-The following review summarises existing research across four domains relevant to the GlassBox project: computational support for variant interpretation, explainability for genomic evidence review, reliability of structured outputs, and workflow provenance tracking. Together, these areas motivate the need for affordable, auditable, reproducible workflow patterns. In the current repository, that pattern is implemented as a lightweight Nextflow subworkflow using deterministic, rule-based triage logic rather than a deployed model.
+The following review summarises background research across four domains that may inform future work around the GlassBox project: computational support for variant interpretation, explainability for genomic evidence review, reliability of structured outputs, and workflow provenance tracking.
 
 ## 1. Computational Support for Variant Interpretation
 
