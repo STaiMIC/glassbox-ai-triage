@@ -1,10 +1,10 @@
-# Glass-Box Rule-Based Triage After nf-core/sarek: An Auditable, Low-Cost Nextflow Pattern
+# Glass-Box Rule-Based Triage for Post-VCF Workflow Testing: An Auditable, Low-Cost Nextflow Pattern
 
-This project provides a small, reusable Nextflow subworkflow pattern for deterministic, rule-based post-processing of variant-like test data after an nf-core/sarek-style workflow.
+This project provides a small, reusable Nextflow subworkflow pattern for deterministic, rule-based post-processing of committed VCF-like test data.
 
 > **Note:** The current triage logic uses placeholder, deterministic rules for testing this reproducibility pattern. It is not a validated clinical method and must not be used to prioritise real clinical variants.
 
-When testing reproducibility patterns for variant triage workflows, variability and lack of traceability create a major auditability problem. This repository demonstrates how a deterministic, rule-based triage step can produce structured outputs, validation results, and audit bundles that make each test decision easier to inspect and reproduce.
+This repository demonstrates how a deterministic, rule-based triage step can produce structured outputs, validation results, and audit bundles that make each test output easier to inspect and reproduce.
 
 ## Architecture
 
